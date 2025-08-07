@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>create3_navigation2</name>
+  <version>1.1.18</version>
+  <description>
+    ROS2 Navigation Stack for the Create 3
+  </description>
+  <maintainer email="ccort6@gatech.edu">ccort6</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- require all base nav2-packages (through navigation2) and original nav2_bringup in case used -->
+  <!-- create3_nav2_bringup doesn't belong for recursive dependencies -->
+  <exec_depend>navigation2</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
